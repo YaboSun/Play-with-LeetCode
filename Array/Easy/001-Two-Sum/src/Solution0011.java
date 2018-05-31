@@ -7,7 +7,7 @@ import java.util.HashMap;
 /// Brute Force
 /// Time Complexity: O(n^2)
 /// Space Complexity: O(1)
-public class Solution1 {
+public class Solution0011 {
 
     public int[] twoSum(int[] nums, int target) {
 
@@ -31,6 +31,6 @@ public class Solution1 {
 
         int[] nums = {0, 4, 3, 0};
         int target = 0;
-        printArr((new Solution1()).twoSum(nums, target));
+        printArr((new Solution0011()).twoSum(nums, target));
     }
 }

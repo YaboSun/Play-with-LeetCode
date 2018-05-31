@@ -2,7 +2,7 @@
  * 给定一个整数数组和一个目标值，找出数组中和为目标值的两个数
  * 你可以假设每个输入只对应一种答案，且同样的元素不能被重复利用
  */
-class Solution2 {
+class Solution0012 {
     public static int[] twoSum (int[] array, int target) {
         int[] indices = new int[2];
         int nTwoSum = 0;
@@ -22,7 +22,7 @@ class Solution2 {
         int[] testArr = {0, 2, 3, 4};
         int testTarget = 5;
         int[] printIndices;
-        printIndices = Solution2.twoSum(testArr, testTarget);
+        printIndices = Solution0012.twoSum(testArr, testTarget);
         for (int index : printIndices) {
             System.out.print(index + " ");
         }
