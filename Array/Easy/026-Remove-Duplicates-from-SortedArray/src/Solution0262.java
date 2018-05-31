@@ -12,7 +12,7 @@ public class Solution0262 {
     }
 
     public static void main(String[] args) {
-        int nums[] = {2, 2, 6};
+        int nums[] = {2, 2, 6, 4};
         int length = Solution0262.removeDuplicates(nums);
         System.out.println(length);
     }

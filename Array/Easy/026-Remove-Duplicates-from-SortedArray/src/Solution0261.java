@@ -20,7 +20,7 @@ public class Solution0261 {
         return count;
     }
     public static void main(String[] args) {
-        int nums[] = {1, 1, 2};
+        int nums[] = {1, 1, 2, 3};
         int length = Solution0261.removeDuplicates(nums);
         System.out.println(length);
     }
