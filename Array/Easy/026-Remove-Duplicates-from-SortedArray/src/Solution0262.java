@@ -1,6 +1,5 @@
 public class Solution0262 {
-    public static int removeDuplicates(int[] nums) {
-        if (nums.length == 0) return 0;
+    public static int[] removeDuplicates(int[] nums) {
         int i = 0;
         for (int j = 1; j < nums.length; j++) {
             if (nums[j] != nums[i]) {
@@ -8,12 +7,14 @@ public class Solution0262 {
                 nums[i] = nums[j];
             }
         }
-        return i + 1;
+        return nums;
     }
 
     public static void main(String[] args) {
-        int nums[] = {2, 6, 4};
-        int length = Solution0262.removeDuplicates(nums);
-        System.out.println(length);
+        int nums[] = {2, 2, 3, 3};
+        int[] newArr = Solution0262.removeDuplicates(nums);
+        for (int i = 0; i < newArr.length - 1; i ++ ) {
+            System.out.println(newArr[i]);
+        }
     }
 }

@@ -6,8 +6,8 @@ class Solution0012 {
     public static int[] twoSum (int[] array, int target) {
         int[] indices = new int[2];
         int nTwoSum = 0;
-        for (int i = 0; i < array.length - 1; i ++) {
-            for (int j = i+1; j < array.length; j ++){
+        for (int i = 0; i < array.length; i ++) {
+            for (int j = i+1; j < array.length -1; j ++){
                 nTwoSum = array[i] + array[j];
                 if (nTwoSum == target) {
                     indices[0] = i;
@@ -19,7 +19,7 @@ class Solution0012 {
         return indices;
     }
     public static void main(String[] args) {
-        int[] testArr = {0, 2, 3, 4};
+        int[] testArr = {0, 2, 3, 4, 2};
         int testTarget = 5;
         int[] printIndices;
         printIndices = Solution0012.twoSum(testArr, testTarget);
