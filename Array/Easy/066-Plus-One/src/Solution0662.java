@@ -22,11 +22,12 @@ public class Solution0662 {
         /**
          * 思路：只获取数组最后一个数字并+1,如果最后一个数字小于9，那么直接相加输出
          * 如果等于9 则前面一位数字进行同样的判断 并将最后一位数字变为0
+         * 如果全部数字都是9，那么需要新建一个数组，这个数组比原来的长度+1，并把第一个数字置为1，后面数字全为0
          */
         for (int i = currIndex; i >= 0; i --){
             if (digits[i] < 9) {
                 digits[i] = digits[i] + 1;
-                return digits;
+                return digits; //这里直接返回很巧妙
             }
             else {
                 digits[i] = 0;
