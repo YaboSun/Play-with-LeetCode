@@ -23,6 +23,12 @@ public class Solution2192 {
         new Solution2192().containsNearbyDuplicate(nums, k);
     }
 
+    /**
+     * 使用hashmap实现
+     * @param nums
+     * @param k
+     * @return
+     */
     public boolean containsNearbyDuplicate(int[] nums, int k) {
         boolean hasNearbyDuplicate = false;
         Map<Integer, Integer> map = new HashMap<>();
