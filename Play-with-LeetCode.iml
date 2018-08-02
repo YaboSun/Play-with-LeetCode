@@ -16,6 +16,12 @@
       <sourceFolder url="file://$MODULE_DIR$/Array/Easy/122-Best-Time-to-Buy-and-Sell-Stock-II/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Array/Easy/167-Two-Sum-II/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Array/Easy/217-Contains-Duplicate/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Array/Easy/219-Contains-Duplicate-II/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Array/Easy/243-Shortest-Word-Distance/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Array/Easy/268-Missing-Number/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Array/Easy/283-Move-Zeros/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Array/Easy/414-Third-Maximum_Number/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Array/Easy/448.-Find-All-Numbers-Disappeared-in-an-Array/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
