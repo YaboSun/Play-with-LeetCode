@@ -34,13 +34,24 @@
  */
 public class Solution5661 {
     public static void main(String[] args) {
-
+        int[][] nums = {{1, 2}, {3, 4}};
+        int r = 1;
+        int c = 4;
+        new Solution5661().matrixReshape(nums, r, c);
     }
 
     public int[][] matrixReshape(int[][] nums, int r, int c) {
-        int[][] newNums = {};
+        int[][] newNums = new int[r][c];
+        int n = nums.length;
+        int m = nums[0].length;
 
+        if (r * c != n * m) {
+            return nums;
+        }
 
+        for (int i = 0; i < r * c; i ++) {
+            newNums[i / c][i % c] = nums[i / m][i % m];
+        }
         return newNums;
     }
 }
