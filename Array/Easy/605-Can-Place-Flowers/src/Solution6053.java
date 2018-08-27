@@ -10,26 +10,28 @@
  * Input: flowerbed = [1,0,0,0,1], n = 2
  * Output: False
  */
-public class Solution6052 {
+public class Solution6053 {
     public static void main(String[] args) {
         int[] flowerbed = {1,0,0,0,1};
         int n = 1;
-        System.out.println(new Solution6052().canPlaceFlowers(flowerbed, n));
+        System.out.println(new Solution6053().canPlaceFlowers(flowerbed, n));
     }
 
-    // Very easy solution
+    // Greedy solution
     public boolean canPlaceFlowers(int[] flowerbed, int n) {
-        int count = 1;
-        int result = 0;
-        for(int i = 0; i < flowerbed.length; i++) {
+        int count = 0;
+        for(int i = 0; i < flowerbed.length && count < n; i++) {
             if(flowerbed[i] == 0) {
-                count++;
-            }else {
-                result += (count - 1)/2;
-                count = 0;
+                // get next and prev flower bed slot values.
+                // If i lies at the ends the next and prev are considered as 0.
+                int next = (i == flowerbed.length - 1) ? 0 : flowerbed[i + 1];
+                int prev = (i == 0) ? 0 : flowerbed[i - 1];
+                if(next == 0 && prev == 0) {
+                    flowerbed[i] = 1;
+                    count++;
+                }
             }
         }
-        if(count != 0) result += count/2;
-        return result >= n;
+        return count == n;
     }
 }
