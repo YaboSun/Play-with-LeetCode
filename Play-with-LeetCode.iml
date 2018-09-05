@@ -22,6 +22,10 @@
       <sourceFolder url="file://$MODULE_DIR$/Array/Easy/283-Move-Zeros/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Array/Easy/414-Third-Maximum_Number/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Array/Easy/448.-Find-All-Numbers-Disappeared-in-an-Array/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Array/Easy/581-Shortest-Unsorted-Continuous-Subarray/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Array/Easy/566-Reshape-the-Matrix/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Array/Easy/605-Can-Place-Flowers/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Array/Easy/628-Maximum-Product-of-Three-Numbers/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
