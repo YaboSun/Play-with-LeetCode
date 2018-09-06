@@ -4,7 +4,6 @@ import java.util.Arrays;
  * Created by hadoop on 18-9-5
  */
 public class Solution6283 {
-
     // 第一种方式的简化版
     public int maximumProduct(int[] nums) {
         int N = nums.length;
