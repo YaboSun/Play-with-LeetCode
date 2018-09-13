@@ -28,7 +28,7 @@
  * Output:
  * [[1,2],
  * [3,4]]
- * Explanation:
+ * Explanation:0000000000
  * There is no way to reshape a 2 * 2 matrix to a 2 * 4 matrix.
  * So output the original matrix.
  */
@@ -39,7 +39,6 @@ public class Solution5661 {
         int c = 4;
         new Solution5661().matrixReshape(nums, r, c);
     }
-
     public int[][] matrixReshape(int[][] nums, int r, int c) {
         int[][] newNums = new int[r][c];
         int n = nums.length;
